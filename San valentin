@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>¿Quieres ser mi San Valentín?</title>
+
+<style>
+body{
+background: linear-gradient(#ff9a9e,#fad0c4);
+font-family: Arial;
+text-align: center;
+color: white;
+padding-top: 100px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:20px;
+margin:10px;
+cursor:pointer;
+}
+
+.si{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+background:white;
+color:#ff4d6d;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💖 Tengo algo que preguntarte 💖</h1>
+
+<h2>¿Quieres ser mi San Valentín? 🌹</h2>
+
+<button class="si" onclick="acepto()">SI 💕</button>
+<button class="no" onclick="mueve(this)">NO 😅</button>
+
+<script>
+function acepto(){
+alert("Sabía que dirías que sí 😍");
+}
+
+function mueve(btn){
+btn.style.position="absolute";
+btn.style.top=Math.random()*80+"%";
+btn.style.left=Math.random()*80+"%";
+}
+</script>
+
+</body>
+</html>
